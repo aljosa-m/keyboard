@@ -1,0 +1,39 @@
+.q-p, .a-l, .z-m, .input-holder, .z-1 {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  height: 40px;
+  width: 60%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+.key {
+  width: 100px;
+  height: 100px;
+  background-color: #538C7E;
+  border: 1px solid #000;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .07s;
+  border-radius: 5px;
+  font-size: 30px;
+  color: white;
+  -webkit-box-shadow: 4px 7px 17px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 7px 17px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 7px 17px 0px rgba(0,0,0,0.75);
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: green;
+  -webkit-box-shadow: 6px 9px 17px 0px rgba(0,0,0,0.9);
+  -moz-box-shadow: 6px 9px 17px 0px rgba(0,0,0,0.9);
+  box-shadow: 6px 9px 17px 0px rgba(0,0,0,0.9);
+}
