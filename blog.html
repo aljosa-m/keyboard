@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<meta name="theme-color" content="#ffffff">
+	<title>Blog | Teach your kid all the letters in an interactive and fun way</title>
+	<meta name="description" content="Teach your kid all the letters in an interactive and fun way">
+	<meta property="og:image" content="/img/preview.png">
+	<meta property="og:type" content="Teach your kid all the letters in an interactive and fun way">
+	<meta property="og:title" content="Teach your kid all the letters in an interactive and fun way" />
+	<meta property="og:description" content="Teach your kid all the letters in an interactive and fun way" />
+	<meta property="og:url" content="https://learn-letters.netlify.com/blog" />
+	<link rel="canonical" href="https://learn-letters.netlify.com/blog">
+</head>
+	<body>
+    <nav>
+      <div class="languages">
+        <a class="nav__b"href="index.html" alt="Serbian">🇷🇸  Srpski</a>
+        <a class="nav__b" href="korean.html" alt="Korean">🇰🇷  한국어</a>
+      </div>
+        <a class="nav__b nav__b--right nav__b--active" href="blog.html" alt="Blog">📖  Blog</a>
+    </nav>
+    <div class="blog-title">
+      <h1>Coming Soon! Uskoro! 곧 올거야!</h1>
+    </div>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131135495-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-131135495-1');
+		</script>
+
+
+		<script>
+
+		function removeTransition(e) {
+		  if (e.propertyName !== 'transform') return; // skip it if it's not a transform
+		  this.classList.remove('playing');
+		}
+		function playSound(e) {
+		  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+		  const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+		  if (!audio) return;
+		  key.classList.add('playing');
+		  audio.currentTime = 0;
+		  audio.play();
+		}
+		const keys = Array.from(document.querySelectorAll('.key'));
+		keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+		window.addEventListener('keydown', playSound);
+		</script>
+	</body>
+
+</html>
